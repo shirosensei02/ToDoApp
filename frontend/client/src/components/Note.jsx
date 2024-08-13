@@ -1,10 +1,10 @@
-import React from "react";
-import "./App.css";
+import React, {useState} from "react";
+import "./styles/App.css";
 
-function Note() {
+function Note(props) {
   return (
     <div className="note">
-      <p>Hello Hello Hello Hello Hello Hello Hello Hello HelloHelloHelloHelloHello</p>
+      <p>{props.content}</p>
     </div>
   );
 }
