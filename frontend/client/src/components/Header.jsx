@@ -6,6 +6,7 @@ function Header() {
     <div>
       <header>
         <h1>Todo</h1>
+        <button>Add</button>
       </header>
     </div>
   );

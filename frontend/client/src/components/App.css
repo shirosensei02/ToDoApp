@@ -3,12 +3,20 @@ header {
   margin: auto -16px;
   padding: 16px 50px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
 }
 
 header h1 {
   color: #fff;
   font-family: "McLaren", cursive;
   font-weight: 200;
+}
+
+header button {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 footer {
@@ -21,4 +29,21 @@ footer {
 
 footer p {
   color: #ccc;
+}
+
+.note {
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 7px;
+  float: left;
+  margin: 16px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
