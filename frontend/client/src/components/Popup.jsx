@@ -15,6 +15,17 @@ function Popup(props) {
     });
   }
 
+  function handleAdd(event) {
+    props.addNoteList(note);
+    props.closeClick();
+    setNote({
+      content: "",
+      date: "",
+    });
+    // console.log(note.content);
+    event.preventDefault();
+  }
+
   return (
     <div className="popup-container">
       <div className="popup">
@@ -31,15 +42,9 @@ function Popup(props) {
           type="date"
           name="date"
           onChange={handleInput}
-          value={note.date}
+          // value={note.date}
         ></input>
-        <button
-          className="addBtn"
-          onClick={() => {
-            props.closeClick();
-            props.addNoteList(note);
-          }}
-        >
+        <button className="addBtn" onClick={handleAdd}>
           Add
         </button>
         <button className="closeBtn" onClick={props.closeClick}>
